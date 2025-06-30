@@ -13,7 +13,7 @@
 /* Bootloader command -----------------------------------------*/
 #define CMD_UPDATE_STR        "update"
 #define CMD_UPLOAD_STR        "upload"
-#define CMD_ERASE_STR		  "erase"
+#define CMD_ERASE_STR		      "erase"
 #define CMD_MENU_STR          "menu"
 #define CMD_RUNAPP_STR        "runapp"
 #define CMD_ERROR_STR         "error"
@@ -42,5 +42,9 @@
 
 /* The maximum length of the command string -------------------*/
 #define CMD_STRING_SIZE       128
+
+
+
+
 
 #endif

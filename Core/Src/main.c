@@ -91,27 +91,18 @@ int main(void)
   MX_USART1_UART_Init();
   // MX_IWDG1_Init();
   /* USER CODE BEGIN 2 */
-  printf("bootloader \r\n");
-  Boot_COM_Init();
+  Boot_iap_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    uint8_t cmdStr[128];
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    BSP_LED_Toggle();
-    // printf("hello world\r\n");
-    // HAL_Delay(250);
-    Boot_Get_ComStr(cmdStr);
-    if(strcmp((char *)cmdStr, "hello world") == 0)
-		{
-			printf("hello world\r\n");
-      memset(cmdStr,0,128);
-		}
+    Boot_iap_main();
   }
   /* USER CODE END 3 */
 }

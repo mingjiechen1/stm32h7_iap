@@ -1,6 +1,5 @@
-#include    "Common.h"
-#include    <string.h>
-#include    <stdlib.h>
+#include    "Boot_common.h"
+
 
 static uint8_t uartRxByte;
 static uint8_t u8_ComStr[CMD_STRING_SIZE] = {0};

@@ -1,5 +1,5 @@
-#ifndef __COMMON_H__
-#define __COMMON_H__
+#ifndef __BOOT_COMMON_H__
+#define __BOOT_COMMON_H__
 
 #include    "Boot_include.h"
 
