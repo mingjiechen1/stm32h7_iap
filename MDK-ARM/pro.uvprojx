@@ -544,6 +544,11 @@
               <FileType>1</FileType>
               <FilePath>..\Boot\Src\Boot_common.c</FilePath>
             </File>
+            <File>
+              <FileName>Boot_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Boot\Src\Boot_flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
