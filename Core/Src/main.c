@@ -92,15 +92,19 @@ int main(void)
   // MX_IWDG1_Init();
   /* USER CODE BEGIN 2 */
   Boot_iap_init();
+
+  Boot_Write_flag(BootFlagAddress,UPDATE_FLAG_DATA);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    
-    /* USER CODE END WHILE */
 
+    /* USER CODE END WHILE */
+    // uint32_t data = FLASH_ReadWord(flash_address);
+    // printf("flash data = %d",data);
     /* USER CODE BEGIN 3 */
     Boot_iap_main();
   }

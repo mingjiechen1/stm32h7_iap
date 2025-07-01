@@ -30,7 +30,7 @@ typedef struct
 #include    "Boot_common.h"
 #include    "Boot_cmd.h"
 #include    "Boot_iap.h"
-// #include    "Boot_flash.h"
+#include    "Boot_flash.h"
 
 
 
